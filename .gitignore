@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Staged content synced from the mobile app repo — build input only.
+# Never commit or serve this: it's the raw source JSON, including full
+# premium-tier feature content, which must not be publicly reproduced.
+# scripts/build-modules.py reads from here and writes public, trimmed
+# HTML into modules/ — that generated HTML *is* committed.
+.content-src/
